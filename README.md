@@ -1,6 +1,6 @@
 # Movies App 🎬
 
-Hi, do you like movies? 😁 Try MoviesApp here.  There are currently 4 themes in the app. search for your favourite movie and add it to your favourites.
+Hi, do you like movies? 😁 Try MoviesApp here.  There are currently 4 themes in the app. Search for your favourite movie and add it to your favourites.
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=vellt/Movies-App) ![Web 1280 – 1]( https://img.shields.io/badge/-open%20source-green)
 
