@@ -16,3 +16,20 @@ Hi, do you like movies? 😁 Try MoviesApp <a href="https://github.com/vellt/Mov
 
 ![web 1280](https://user-images.githubusercontent.com/61885011/132903284-a8e9f688-39ad-487c-9bc4-6f1404c469bc.png)
 
+## How to run
+This application is using api of <a href="https://www.themoviedb.org/">themoviedb</a>, so before using it you have to create an api from <a href="https://www.themoviedb.org/">themoviedb</a> and generate an API and apply it to this application, follow the below step to connect api with this app.
+
+First go to <a href="https://www.themoviedb.org/documentation/api">https://www.themoviedb.org/documentation/api</a>, and follow the API Documentation, you will get the API Code.
+
+- go to `lib/secret/themoviedb_api.dart`
+- you will see the code like this
+
+```dart
+const String themoviedbApi = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+```
+- replace the all `xx..` to your API, like this
+
+```dart
+const String themoviedbApi = 'your_api_code_here';
+```
+- enjoy coding ❤️
