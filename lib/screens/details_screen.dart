@@ -9,6 +9,7 @@ import 'package:sizer/sizer.dart';
 import 'package:movies_app_flutter/utils/star_calculator.dart'
     as starCalculator;
 import 'package:movies_app_flutter/utils/file_manager.dart' as file;
+import 'package:movies_app_flutter/utils/toast_alert.dart' as alert;
 
 class DetailsScreen extends StatefulWidget {
   final String id;
@@ -31,7 +32,6 @@ class _DetailsScreenState extends State<DetailsScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     () async {
       MovieDetails temp = await widget.getMovieDetails();
@@ -47,13 +47,27 @@ class _DetailsScreenState extends State<DetailsScreen> {
   }
 
   saveFavorite() async {
-    file.addFavorite(movieID: widget.id);
-    isFavorite = true;
+    if (await file.addFavorite(movieID: widget.id)) {
+      alert.toastAlert(
+        message: kFavoriteAddedText,
+        themeColor: widget.themeColor,
+      );
+    }
+    setState(() {
+      isFavorite = true;
+    });
   }
 
   removeFavorite() async {
-    file.removeFavorite(movieID: widget.id);
-    isFavorite = false;
+    if (await file.removeFavorite(movieID: widget.id)) {
+      alert.toastAlert(
+        message: kFavoriteRemovedText,
+        themeColor: widget.themeColor,
+      );
+    }
+    setState(() {
+      isFavorite = false;
+    });
   }
 
   @override
@@ -96,9 +110,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   ],
                   flexibleSpace: FlexibleSpaceBar(
                     centerTitle: true,
-                    title: Text(
-                      "Overview",
-                    ),
+                    title: Text(kDetailsScreenTitleText),
                     background: SafeArea(
                       child: CachedNetworkImage(
                         fit: BoxFit.cover,
@@ -131,7 +143,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                             height: 4.h,
                           ),
                           Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 3.h),
+                            padding: EdgeInsets.symmetric(horizontal: 4.h),
                             child: Wrap(
                               children: [
                                 Text(
@@ -149,7 +161,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           ),
                           SizedBox(height: 1.h),
                           Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 3.h),
+                            padding: EdgeInsets.symmetric(horizontal: 4.h),
                             child: Row(children: stars!),
                           ),
                           SizedBox(height: 3.h),

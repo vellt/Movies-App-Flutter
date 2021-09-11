@@ -50,7 +50,7 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     });
   }
 
-  void transformPage(int index) {
+  void pageSwitcher(int index) {
     setState(() {
       bottomBarIndex = (index == 2) ? 2 : 1;
       title = (index == 2) ? kFavoriteScreenTitleText : kHomeScreenTitleText;
@@ -58,10 +58,9 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       _movieCards = null;
       loadData();
     });
-    //todo search, offline a _movieCardsok title alapján
   }
 
-  void movieCategory(int index) {
+  void movieCategorySwitcher(int index) {
     setState(() {
       activeInnerPageIndex = index;
       _movieCards = null;
@@ -110,9 +109,10 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   title: title,
                   activeButtonIndex: activeInnerPageIndex!,
                   activeColor: themeColor!,
-                  buttonFistOnPressed: (index) => movieCategory(index),
-                  buttonSecondOnPressed: (index) => movieCategory(index),
-                  buttonThirdOnPressed: (index) => movieCategory(index),
+                  buttonFistOnPressed: (index) => movieCategorySwitcher(index),
+                  buttonSecondOnPressed: (index) =>
+                      movieCategorySwitcher(index),
+                  buttonThirdOnPressed: (index) => movieCategorySwitcher(index),
                   searchOnPressed: () => navi.newScreen(
                     context: context,
                     newScreen: () => FinderScreen(
@@ -127,9 +127,7 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             body: (_movieCards == null)
                 ? CustomLoadingSpinKitRing(loadingColor: themeColor)
                 : (_movieCards!.length == 0)
-                    ? Center(
-                        child: Text("Movies not found"),
-                      )
+                    ? Center(child: Text(k404Text))
                     : MovieCardContainer(
                         scrollController: _scrollController!,
                         themeColor: themeColor!,
@@ -148,14 +146,14 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   icon: Icon(Icons.videocam),
                   iconSize: 28.sp,
                   onPressed: () {
-                    transformPage(1);
+                    pageSwitcher(1);
                   },
                 ),
                 BottomNavigationItem(
                     icon: Icon(Icons.bookmark_sharp),
                     iconSize: 23.sp,
                     onPressed: () {
-                      transformPage(2);
+                      pageSwitcher(2);
                     }),
               ],
             ),

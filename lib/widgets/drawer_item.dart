@@ -28,7 +28,6 @@ class DrawerItem extends StatelessWidget {
         ),
         child ??
             Container(
-              height: 28.h,
               child: SingleChildScrollView(
                 physics: BouncingScrollPhysics(),
                 child: Text(

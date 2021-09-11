@@ -4,7 +4,7 @@ import 'package:sizer/sizer.dart';
 
 Future<void> toastAlert({Color? themeColor, required String message}) {
   return Fluttertoast.showToast(
-    msg: "Theme applied",
+    msg: message,
     toastLength: Toast.LENGTH_SHORT,
     gravity: ToastGravity.BOTTOM,
     timeInSecForIosWeb: 1,

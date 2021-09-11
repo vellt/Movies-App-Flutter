@@ -34,7 +34,7 @@ class MovieCard extends StatelessWidget {
                   themeColor: themeColor,
                 ));
         if (contentLoadedFromPage != null)
-          kHomeScreenKey.currentState!.transformPage(contentLoadedFromPage!);
+          kHomeScreenKey.currentState!.pageSwitcher(contentLoadedFromPage!);
       },
       child: Padding(
         padding: EdgeInsets.all(4.w),

@@ -37,7 +37,7 @@ Future<bool> addFavorite({required String movieID}) async {
   List<String> listedText = await getFavoritesID();
   bool result = false;
   if (!listedText.contains(movieID)) {
-    listedText.add(movieID);
+    listedText.insert(0, movieID);
     result = await _write(text: listedText.join(';'), root: "favorites.txt");
   }
   return result;
@@ -49,11 +49,11 @@ Future<bool> removeFavorite({required String movieID}) async {
   try {
     listedText.remove(movieID);
     result = await _write(text: listedText.join(';'), root: "favorites.txt");
-    return true;
   } catch (e, s) {
     print(s);
-    return false;
+    result = false;
   }
+  return result;
 }
 
 Future<Color> currentTheme() async {
@@ -78,8 +78,6 @@ Future<Color> currentTheme() async {
 
 Future<bool> isMovieInFavorites({required String movieID}) async {
   String result = await _read(root: "favorites.txt");
-  bool boolin = result.split(';').contains(movieID);
-  print(boolin);
   return result.split(';').contains(movieID);
 }
 

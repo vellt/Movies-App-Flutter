@@ -11,6 +11,9 @@ const kHomeScreenButtonFirstText = "Populars";
 const kHomeScreenButtonSecondText = "Coming Soon";
 const kHomeScreenButtonThirdText = "Top Rated";
 const kHomeScreenTitleText = "Watch Now";
+const k404Text = "Movies not found";
+const kFavoriteRemovedText = "Movie removed from Favorites";
+const kFavoriteAddedText = "Movie added to Favorites";
 const kDetailsScreenTitleText = "Overview";
 const kStoryLineTitleText = "Storyline";
 const kSplashScreenTitleText = "loading..";
@@ -22,7 +25,7 @@ const kDrawerTitleThirdText = "DEPENDENCIES";
 const kAppliedTheme = "Theme applied";
 const kNotFoundErrorText = "Not found";
 const kDrawerAboutDescText =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare libero a tellus egestas blandit quis pretium est. Aliquam porta eros velit. Aliquam risus orci, bibendum dictum pellentesque ut, facilisis sed nibh. Quisque condimentum, augue id viverra fringilla, mi leo varius mi, quis sagittis diam nibh et erat. Maecenas ultrices ullamcorper neque, at aliquet mi. In pulvinar sodales sem. Nulla facilisi. Nullam libero metus, mollis eget finibus eget, eleifend sed urna.";
+    "Hi, I am a practicing Flutter developer. You see currently my portfoliowork, which is based on the themoviedb API. If you want to see my future developments, follow me on GitHub (vellt).";
 const kDrawerDependenciesDescText =
     "\t• sizer\n\t• flutter_spinkit\n\t• cached_network_image\n\t• fluttertoast\n\t• http\n\t• path_provider";
 const kMainGreenColor = Color(0xFF37A45E);
@@ -74,6 +77,7 @@ final kTitleTextStyle = TextStyle(
 final kDrawerDescTextStyle = TextStyle(
   fontSize: 14.sp,
   color: kDrawerTextColor,
+  height: 0.19.h,
 );
 
 final kAppBarTitleTextStyle = TextStyle(

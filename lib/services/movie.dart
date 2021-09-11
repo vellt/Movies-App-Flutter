@@ -123,16 +123,12 @@ class MovieModel {
       {required Color themeColor, required int bottomBarIndex}) async {
     List<MovieCard> temp = [];
     List<String> favoritesID = await getFavoritesID();
-    print(">>>>>>${favoritesID.length}");
     for (var item in favoritesID) {
       if (item != "") {
         var data = await _getData(
           url:
-              '$kThemoviedbURL/${item}?api_key=${secret.themoviedbApi}&language=en-US',
+              '$kThemoviedbURL/$item?api_key=${secret.themoviedbApi}&language=en-US',
         );
-
-        bool egy = await isMovieInFavorites(movieID: data["id"].toString());
-        print(">>>>>>>>>>>>>>><<<<<<<<$egy");
 
         temp.add(
           MovieCard(

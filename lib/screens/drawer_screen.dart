@@ -18,7 +18,7 @@ class DrawerScreen extends StatelessWidget {
           padding:
               EdgeInsets.only(top: 10.h, left: 6.w, right: 6.w, bottom: 5.h),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               DrawerItem(
                 title: kDrawerTitleFirstText,
@@ -56,8 +56,16 @@ class DrawerScreen extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 5.h,
+              ),
               DrawerItem(
-                  title: kDrawerTitleSecondText, desc: kDrawerAboutDescText),
+                title: kDrawerTitleSecondText,
+                desc: kDrawerAboutDescText,
+              ),
+              SizedBox(
+                height: 5.h,
+              ),
               DrawerItem(
                   title: kDrawerTitleThirdText,
                   desc: kDrawerDependenciesDescText),
