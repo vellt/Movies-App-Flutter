@@ -2,8 +2,9 @@
 
 Hi, do you like movies? 😁 Try MoviesApp <a href="https://github.com/vellt/Movies-App/releases/tag/v0.0.1">**here**</a>.  There are currently 4 themes in the app. Search for your favourite movie and add it to your favourites.
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=vellt/Movies-App) ![Web 1280 – 1]( https://img.shields.io/badge/-open%20source-green)
-
+![visitors](https://visitor-badge.glitch.me/badge?page_id=vellt/Movies-App) 
+![Web 1280 – 1]( https://img.shields.io/badge/-open%20source-green)
+[![License](https://img.shields.io/badge/license-MIT-yellow)](./LICENSE)
 
 
 <details>
