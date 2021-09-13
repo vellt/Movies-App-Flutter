@@ -28,7 +28,7 @@ Hi, do you like movies? 😁 Try MoviesApp <a href="https://github.com/vellt/Mov
 ## License
 This project utilizes the <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/LICENSE">MIT License</a> 
 
-## Contributors changes
+## Contributors Changes
 - *`11/09/21` -  **Rohit Chouhan**: Added the missing <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/lib/secret/themoviedb_api.dart">secret/themoviedb_api.dart</a> file for running the project and the exact <a href="https://github.com/vellt/Movies-App-Flutter#getting-started">documentation</a> for its correct use of the api file.*
 
 ## Getting Started
