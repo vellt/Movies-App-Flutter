@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
 class MovieDetails {
+  final int id;
   final String title;
   final String year;
   final bool isFavorite;
@@ -13,6 +14,7 @@ class MovieDetails {
   final String backgroundURL;
 
   MovieDetails({
+    required this.id,
     required this.title,
     required this.year,
     required this.isFavorite,

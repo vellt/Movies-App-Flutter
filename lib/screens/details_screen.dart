@@ -5,6 +5,7 @@ import 'package:movies_app_flutter/model/movie_details.dart';
 import 'package:movies_app_flutter/services/movie.dart';
 import 'package:movies_app_flutter/utils/constants.dart';
 import 'package:movies_app_flutter/widgets/custom_loading_spin_kit_ring.dart';
+import 'package:share/share.dart';
 import 'package:sizer/sizer.dart';
 import 'package:movies_app_flutter/utils/star_calculator.dart'
     as starCalculator;
@@ -220,6 +221,15 @@ class _DetailsScreenState extends State<DetailsScreen> {
                 )
               ],
             ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Share.share(
+              '${movieDetails!.title}, Follow the link https://www.themoviedb.org/movie/' +
+                  movieDetails!.id.toString());
+        },
+        child: const Icon(Icons.share),
+        backgroundColor: Colors.white,
+      ),
     );
   }
 }

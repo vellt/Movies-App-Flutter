@@ -105,6 +105,7 @@ class MovieModel {
 
     return Future.value(
       MovieDetails(
+        id: data['id'],
         backgroundURL:
             "https://image.tmdb.org/t/p/w500${data["backdrop_path"]}",
         title: data["title"],
