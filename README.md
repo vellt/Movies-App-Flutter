@@ -29,9 +29,9 @@ Hi, do you like movies? 😁 Try MoviesApp <a href="https://github.com/vellt/Mov
 This project utilizes the <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/LICENSE">MIT License</a> 
 
 ## Contributors changes
-- *`11/09/21` -  **Rohit Chouhan**: Added the missing <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/lib/secret/themoviedb_api.dart">secret/themoviedb_api.dart</a> file for running the project and the exact <a href="https://github.com/vellt/Movies-App-Flutter#source-code-setup">documentation</a> for its correct use of the api file.*
+- *`11/09/21` -  **Rohit Chouhan**: Added the missing <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/lib/secret/themoviedb_api.dart">secret/themoviedb_api.dart</a> file for running the project and the exact <a href="https://github.com/vellt/Movies-App-Flutter#getting-started">documentation</a> for its correct use of the api file.*
 
-## Source code setup
+## Getting Started
 This application is using api of <a target="_blank" href="https://www.themoviedb.org/">themoviedb</a>, so before using it you have to create an api from <a  target="_blank" href="https://www.themoviedb.org/">themoviedb</a> and generate an API and apply it to this application, follow the below step to connect api with this app.
 
 First go to <a target="_blank" href="https://www.themoviedb.org/documentation/api">https://www.themoviedb.org/documentation/api</a>, and follow the API Documentation, you will get the API Code.
