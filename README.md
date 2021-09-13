@@ -33,3 +33,8 @@ const String themoviedbApi = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 const String themoviedbApi = 'your_api_code_here';
 ```
 - enjoy coding ❤️
+
+## Change log
+```
+13/09/21
+- share feature [added]
