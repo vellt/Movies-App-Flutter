@@ -34,6 +34,24 @@ const String themoviedbApi = 'your_api_code_here';
 ```
 - enjoy coding ❤️
 
+## Contributors
+<table>
+  <tr>
+   <td align="center">
+            <a href="https://github.com/vellt">
+                <img src="https://avatars.githubusercontent.com/u/61885011?v=4" width="100px;" alt="" /><br />
+                <sub><b>Szántó Benjámin</b></sub>
+     </a>
+        </td>
+   <td align="center">
+            <a href="https://github.com/rohit-chouhan">
+                <img src="https://avatars.githubusercontent.com/u/34239087?v=4" width="100px;" alt="" /><br />
+                <sub><b>Rohit Chouhan</b></sub>
+     </a>
+        </td>
+  </tr>
+</table>
+
 ## Change log
 ```
 13/09/21
