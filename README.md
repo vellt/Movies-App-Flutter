@@ -25,12 +25,6 @@ Hi, do you like movies? 😁 Try MoviesApp <a href="https://github.com/vellt/Mov
 - `Http`: <a target="_blank" href="https://pub.dev/packages/http">https://pub.dev/packages/http</a>
 - `Path Provider`: <a target="_blank" href="https://pub.dev/packages/path_provider">https://pub.dev/packages/path_provider</a>
  
-## License
-This project utilizes the <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/LICENSE">MIT License</a> 
-
-## Contributors Changes
-- *`11/09/21` -  **Rohit Chouhan**: Added the missing <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/lib/secret/themoviedb_api.dart">secret/themoviedb_api.dart</a> file for running the project and the exact <a href="https://github.com/vellt/Movies-App-Flutter#getting-started">documentation</a> for its correct use of the api file.*
-
 ## Getting Started
 This application is using api of <a target="_blank" href="https://www.themoviedb.org/">themoviedb</a>, so before using it you have to create an api from <a  target="_blank" href="https://www.themoviedb.org/">themoviedb</a> and generate an API and apply it to this application, follow the below step to connect api with this app.
 
@@ -48,3 +42,9 @@ const String themoviedbApi = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 const String themoviedbApi = 'your_api_code_here';
 ```
 - enjoy coding 💙
+
+## Contributors Changes
+*`11/09/21` -  **Rohit Chouhan**: Added the missing <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/lib/secret/themoviedb_api.dart">secret/themoviedb_api.dart</a> file for running the project and the exact <a href="https://github.com/vellt/Movies-App-Flutter#getting-started">documentation</a> for its correct use of the api file.*
+
+## License
+This project is licensed under the <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/LICENSE">MIT License</a>
