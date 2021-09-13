@@ -34,3 +34,8 @@ const String themoviedbApi = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 const String themoviedbApi = 'your_api_code_here';
 ```
 - enjoy coding ❤️
+
+## Contributors changes
+
+- `11/09/21 -  Rohit Chouhan: `<br>
+ Added the missing file <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/lib/secret/themoviedb_api.dart">secret/themoviedb_api.dart</a> for running the project and the exact <a href="https://github.com/vellt/Movies-App-Flutter#how-to-run">documentation</a> for its correct use of the api file.
