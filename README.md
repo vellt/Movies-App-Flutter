@@ -6,9 +6,7 @@ Hi, do you like movies? 😁 Try MoviesApp <a href="https://github.com/vellt/Mov
 ![Web 1280 – 1]( https://img.shields.io/badge/-open%20source-green)
 [![License](https://img.shields.io/badge/license-MIT-orange)](./LICENSE)
 
-
-
-![web 1280](https://user-images.githubusercontent.com/61885011/132903284-a8e9f688-39ad-487c-9bc4-6f1404c469bc.png)
+<img src="https://user-images.githubusercontent.com/61885011/132903284-a8e9f688-39ad-487c-9bc4-6f1404c469bc.png">
 
 ## Operating Principle
 
