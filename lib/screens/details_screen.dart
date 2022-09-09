@@ -171,7 +171,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                             child: Padding(
                               padding: EdgeInsets.symmetric(horizontal: 3.h),
                               child:
-                                  Row(children: movieDetails!.getGenresList()),
+                                  Row(children: movieDetails!.getGenresList(context)),
                             ),
                           ),
                           SizedBox(height: 1.h),
