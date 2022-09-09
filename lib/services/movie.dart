@@ -140,17 +140,17 @@ class MovieModel {
 
     return Future.value(
       MovieDetails(
-          backgroundURL:
-              "https://image.tmdb.org/t/p/w500${data["backdrop_path"]}",
-          title: data["title"],
-          year: (data["release_date"].toString().length > 4)
-              ? data["release_date"].toString().substring(0, 4)
-              : "",
-          isFavorite: await isMovieInFavorites(movieID: data["id"].toString()),
-          rating: data["vote_average"].toDouble(),
-          genres: Map.fromIterables(temp, genreIdsTemp),
-          overview: data["overview"],
-          genresIds: genreIdsTemp),
+        backgroundURL:
+            "https://image.tmdb.org/t/p/w500${data["backdrop_path"]}",
+        title: data["title"],
+        year: (data["release_date"].toString().length > 4)
+            ? data["release_date"].toString().substring(0, 4)
+            : "",
+        isFavorite: await isMovieInFavorites(movieID: data["id"].toString()),
+        rating: data["vote_average"].toDouble(),
+        genres: Map.fromIterables(temp, genreIdsTemp),
+        overview: data["overview"],
+      ),
     );
   }
 

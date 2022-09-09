@@ -11,12 +11,12 @@ class MovieDetails {
   final bool isFavorite;
   final double rating;
   final Map<String, int> genres;
-  final List<int> genresIds;
+
   final String overview;
   final String backgroundURL;
 
   MovieDetails({
-    required this.genresIds,
+  
     required this.title,
     required this.year,
     required this.isFavorite,
