@@ -7,7 +7,7 @@ class CustomMoviesButton extends StatelessWidget {
   final void Function()? onPressed;
   final Color color;
   final EdgeInsetsGeometry? padding;
-
+  
   CustomMoviesButton({
     required this.text,
     this.onPressed,
