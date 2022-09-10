@@ -1,6 +1,6 @@
 # Movies App 🎬
 
-Hi, do you like movies? 😁 Try MoviesApp <a href="https://github.com/vellt/Movies-App/releases/tag/v0.0.1">here</a>, or if you are a developer click <a href="https://github.com/vellt/Movies-App-Flutter#getting-started">here</a>.  There are currently 4 themes in the app. Search for your favourite movie and add it to your favourites.
+Hi, do you like movies? 😁 Try MoviesApp <a href="https://github.com/vellt/Movies-App-Flutter/releases/tag/v0.0.2">here</a>, or if you are a developer click <a href="https://github.com/vellt/Movies-App-Flutter#getting-started">here</a>.  There are currently 4 themes in the app. Search for your favourite movie and add it to your favourites.
 
 ![visitors](https://visitor-badge.glitch.me/badge?right_color=teal&page_id=vellt/Movies-App) 
 ![Web 1280 – 1]( https://img.shields.io/badge/made%20with-flutter-blue?style=flat)
