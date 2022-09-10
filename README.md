@@ -29,7 +29,7 @@ This application is using api of <a target="_blank" href="https://www.themoviedb
 
 First go to <a target="_blank" href="https://www.themoviedb.org/documentation/api">https://www.themoviedb.org/documentation/api</a>, and follow the API Documentation, you will get the API Code.
 
-- go to `lib/secret/themoviedb_api.dart`
+- go to `secret/the_moviedb_api.dart`
 - you will see the code like this
 
 ```dart
