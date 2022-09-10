@@ -1,6 +1,6 @@
 import 'package:movies_app_flutter/model/movie_details.dart';
 import 'package:movies_app_flutter/model/movie_preview.dart';
-import 'package:movies_app_flutter/secret/themoviedb_api.dart' as secret;
+import 'package:movies_app_flutter/secret/the_moviedb_api.dart' as secret;
 import 'package:movies_app_flutter/utils/constants.dart';
 import 'package:movies_app_flutter/utils/file_manager.dart';
 import 'package:movies_app_flutter/widgets/movie_card.dart';
