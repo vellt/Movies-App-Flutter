@@ -57,9 +57,10 @@ class _FinderScreenState extends State<FinderScreen> {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 18.h,
+        shadowColor: Colors.transparent.withOpacity(0.1),
+        elevation: 0,
         title: Text(kFinderScreenTitleText, style: kSmallAppBarTitleTextStyle),
         backgroundColor: kSearchAppBarColor,
-        shadowColor: Colors.transparent,
         bottom: PreferredSize(
           child: CustomSearchAppbarContent(
               onChanged: (value) => textFieldValue = value,

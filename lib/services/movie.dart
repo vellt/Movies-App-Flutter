@@ -54,6 +54,39 @@ class MovieModel {
     return Future.value(temp);
   }
 
+  Future<List<MovieCard>> getGenreWiseMovies({
+    required int genreId,
+    required Color themeColor,
+  }) async {
+    List<MovieCard> temp = [];
+
+    var data = await _getData(
+      url:
+          '$kThemovieDiscoverdbURL?api_key=${secret.themoviedbApi}&sort_by=popularity.desc&with_genres=$genreId',
+    );
+
+    for (var item in data["results"]) {
+      temp.add(
+        MovieCard(
+          moviePreview: MoviePreview(
+            isFavorite:
+                await isMovieInFavorites(movieID: item["id"].toString()),
+            year: (item["release_date"].toString().length > 4)
+                ? item["release_date"].toString().substring(0, 4)
+                : "",
+            imageUrl: "$kThemoviedbImageURL${item["poster_path"]}",
+            title: item["title"],
+            id: item["id"].toString(),
+            rating: item["vote_average"].toDouble(),
+            overview: item["overview"],
+          ),
+          themeColor: themeColor,
+        ),
+      );
+    }
+    return Future.value(temp);
+  }
+
   Future<List<MovieCard>> searchMovies({
     required String movieName,
     required Color themeColor,
@@ -99,8 +132,10 @@ class MovieModel {
     );
 
     List<String> temp = [];
+    List<int> genreIdsTemp = [];
     for (var item in data["genres"]) {
       temp.add(item["name"]);
+      genreIdsTemp.add(item["id"]);
     }
 
     return Future.value(
@@ -113,7 +148,7 @@ class MovieModel {
             : "",
         isFavorite: await isMovieInFavorites(movieID: data["id"].toString()),
         rating: data["vote_average"].toDouble(),
-        genres: temp,
+        genres: Map.fromIterables(temp, genreIdsTemp),
         overview: data["overview"],
       ),
     );

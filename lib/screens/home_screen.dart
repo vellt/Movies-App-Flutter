@@ -100,9 +100,10 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         : Scaffold(
             key: _scaffoldKey,
             appBar: AppBar(
+              shadowColor: Colors.transparent.withOpacity(0.1),
+              elevation: 0,
               automaticallyImplyLeading: false,
               backgroundColor: kAppBarColor,
-              shadowColor: Colors.transparent,
               bottom: PreferredSize(
                 child: CustomMainAppBarContent(
                   showSlider: showSlider,

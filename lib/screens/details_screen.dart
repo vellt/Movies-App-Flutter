@@ -78,7 +78,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
           : CustomScrollView(
               slivers: [
                 SliverAppBar(
-                  shadowColor: Colors.transparent,
+                  shadowColor: Colors.transparent.withOpacity(0.1),
+                  elevation: 0,
+                  backgroundColor: kPrimaryColor,
                   leading: Padding(
                     padding: EdgeInsets.only(left: 3.w),
                     child: IconButton(
@@ -170,8 +172,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
                             scrollDirection: Axis.horizontal,
                             child: Padding(
                               padding: EdgeInsets.symmetric(horizontal: 3.h),
-                              child:
-                                  Row(children: movieDetails!.getGenresList()),
+                              child: Row(
+                                  children:
+                                      movieDetails!.getGenresList(context)),
                             ),
                           ),
                           SizedBox(height: 1.h),
