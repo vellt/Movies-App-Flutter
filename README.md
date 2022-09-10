@@ -43,7 +43,9 @@ const String themoviedbApi = 'your_api_code_here';
 - enjoy coding 💙
 
 ## Contributors Changes
-*`11/09/21` -  **Rohit Chouhan**: Added the missing <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/lib/secret/themoviedb_api.dart">secret/themoviedb_api.dart</a> file for running the project and the exact <a href="https://github.com/vellt/Movies-App-Flutter#getting-started">documentation</a> for its correct use of the api file.*
+*`11/09/21` -  **Pravin Nichal**: Added a new screen, which listed the similar movie gernes. <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/lib/screens/genre_wise_screen.dart">screens/genre_wise_screen.dart</a> Great Work!*
+
+*`11/09/21` -  **Rohit Chouhan**: Added the missing <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/lib/secret/the_moviedb_api.dart">secret/the_moviedb_api.dart</a> file for running the project and the exact <a href="https://github.com/vellt/Movies-App-Flutter#getting-started">documentation</a> for its correct use of the api file.*
 
 ## License
 This project is licensed under the <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/LICENSE">MIT License</a>
