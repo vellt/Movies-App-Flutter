@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:movies_app_flutter/utils/file_manager.dart' as file;
 import 'package:movies_app_flutter/utils/scroll_top_with_controller.dart'
@@ -65,9 +66,11 @@ class _GenreWiseScreenState extends State<GenreWiseScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.genre, style: kSmallAppBarTitleTextStyle),
+        toolbarHeight: 10.h,
+        shadowColor: Colors.transparent.withOpacity(0.1),
+        elevation: 0,
         backgroundColor: kSearchAppBarColor,
-        shadowColor: Colors.transparent,
+        title: Text("${widget.genre}s", style: kSmallAppBarTitleTextStyle),
       ),
       body: (_movieCards == null)
           ? CustomLoadingSpinKitRing(loadingColor: themeColor)
