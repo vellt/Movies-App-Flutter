@@ -70,7 +70,9 @@ class _GenreWiseScreenState extends State<GenreWiseScreen>
         shadowColor: Colors.transparent.withOpacity(0.1),
         elevation: 0,
         backgroundColor: kSearchAppBarColor,
-        title: Text("${widget.genre}s", style: kSmallAppBarTitleTextStyle),
+        title: Text(
+            "${widget.genre.endsWith('y') ? widget.genre.replaceRange(widget.genre.length - 1, widget.genre.length, 'ie') : widget.genre}s",
+            style: kSmallAppBarTitleTextStyle),
       ),
       body: (_movieCards == null)
           ? CustomLoadingSpinKitRing(loadingColor: themeColor)
