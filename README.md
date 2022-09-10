@@ -1,6 +1,6 @@
 # Movies App 🎬
 
-Hi, do you like movies? 😁 Try MoviesApp <a href="https://github.com/vellt/Movies-App/releases/tag/v0.0.1">here</a>, or if you are a developer click <a href="https://github.com/vellt/Movies-App-Flutter#getting-started">here</a>.  There are currently 4 themes in the app. Search for your favourite movie and add it to your favourites.
+Hi, do you like movies? 😁 Try MoviesApp <a href="https://github.com/vellt/Movies-App-Flutter/releases/tag/v0.0.2">here</a>, or if you are a developer click <a href="https://github.com/vellt/Movies-App-Flutter#getting-started">here</a>.  There are currently 4 themes in the app. Search for your favourite movie and add it to your favourites.
 
 ![visitors](https://visitor-badge.glitch.me/badge?right_color=teal&page_id=vellt/Movies-App) 
 ![Web 1280 – 1]( https://img.shields.io/badge/made%20with-flutter-blue?style=flat)
@@ -29,7 +29,7 @@ This application is using api of <a target="_blank" href="https://www.themoviedb
 
 First go to <a target="_blank" href="https://www.themoviedb.org/documentation/api">https://www.themoviedb.org/documentation/api</a>, and follow the API Documentation, you will get the API Code.
 
-- go to `lib/secret/themoviedb_api.dart`
+- go to `secret/the_moviedb_api.dart`
 - you will see the code like this
 
 ```dart
@@ -43,7 +43,9 @@ const String themoviedbApi = 'your_api_code_here';
 - enjoy coding 💙
 
 ## Contributors Changes
-*`11/09/21` -  **Rohit Chouhan**: Added the missing <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/lib/secret/themoviedb_api.dart">secret/themoviedb_api.dart</a> file for running the project and the exact <a href="https://github.com/vellt/Movies-App-Flutter#getting-started">documentation</a> for its correct use of the api file.*
+*`10/09/22` -  **Pravin Nichal**: Added a new screen, which listed the similar movie gernes. <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/lib/screens/genre_wise_screen.dart">screens/genre_wise_screen.dart</a> Great Work!*
+
+*`11/09/21` -  **Rohit Chouhan**: Added the missing <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/lib/secret/the_moviedb_api.dart">secret/the_moviedb_api.dart</a> file for running the project and the exact <a href="https://github.com/vellt/Movies-App-Flutter#getting-started">documentation</a> for its correct use of the api file.*
 
 ## License
 This project is licensed under the <a href="https://github.com/vellt/Movies-App-Flutter/blob/main/LICENSE">MIT License</a>
